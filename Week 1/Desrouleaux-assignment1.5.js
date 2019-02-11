@@ -39,12 +39,15 @@ payRateOne = payRateOne.toFixed(2);
 payRateOne = payRateTwo.toFixed(2);
 payRateOne = payRateThree.toFixed(2);
 
-console.log("First Name:" + firstNameOne + " Last Name: " + lastNameOne + " Address: " + addressOne + " Hire Date: " + hireDateOne);
 
-console.log("First Name:" + firstNameTwo+ " Last Name: " + lastNameTwo + " Address: " + addressTwo + " Hire Date: " + hireDateTwo);
+//Log all the Employees
+
+console.log("First Name:" + firstNameOne + " Last Name: " + lastNameOne + " Address: " + addressOne + " Hire Date: " + hireDateOne + " Pay Rate:$"+ payRateOne);
+
+console.log("First Name:" + firstNameTwo+ " Last Name: " + lastNameTwo + " Address: " + addressTwo + " Hire Date: " + hireDateTwo + " Pay Rate:$"+ payRateTwo);
 
 
-console.log("First Name:" + firstNameThree + " Last Name: " + lastNameThree + " Address: " + addressThree + " Hire Date:" + hireDateThree);
+console.log("First Name:" + firstNameThree + " Last Name: " + lastNameThree + " Address: " + addressThree + " Hire Date:" + hireDateThree +  " Pay Rate:$"+ payRateThree);
 
 
 
