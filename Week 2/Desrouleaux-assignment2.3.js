@@ -18,20 +18,20 @@
   refer to page 178 for implementing function properties
 */
 
-
+//creating two property functions for first and last name
 myName.lance = 'Lance';
 myName.desrouleaux= 'Desrouleaux';
 
+
+//defining a function named myName
 function myName(){
 
   return myName.lance;
 
 }
 
-function lastName(){
-  return myName.desrouleaux;
-}
 
-console.log("Hello "+ myName(2)+ ' ' + lastName()+ "!");
+//Logging all of the require outputs to screen
+console.log("Hello "+ myName(2)+ ' ' + myName.desrouleaux + "!");
 console.log("Exercise 2.3");
-console.log("February 13th,2019");
+console.log("February 13th, 2019");
