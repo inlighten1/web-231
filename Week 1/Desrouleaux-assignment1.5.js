@@ -1,11 +1,11 @@
-/* 
+/*
 ============================================
-; Title: Desrouleaux-assignment-.5.js
+; Title: Desrouleaux-assignment-1.5.js
 ; Author: Lance Desruleaux
 ; Date: 11 February 2019
 ; Description: Using Javascript to store and display employee information
 ;===========================================
-*/ 
+*/
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-//This is where the first names are stored 
+//This is where the first names are stored
 var firstNameOne= "Bob";
 var firstNameTwo = "John";
 var firstNameThree = "Teddy";
@@ -41,7 +41,7 @@ var addressOne = "123 beach Road";
 var addressTwo = "345 LongStride Circle";
 var addressThree = "6778 Bilmpount court";
 
-//this is where the Pay Rates are stored 
+//this is where the Pay Rates are stored
 var payRateOne = 12.658
 var payRateTwo = 15.77
 var payRateThree = 78.44

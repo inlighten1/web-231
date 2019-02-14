@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title: Desrouleaux-assignment1.4.js
+; Title: Desrouleaux-assignment2.3.js
 ; Author: Lance Desrouleaux
 ; Date: 12 February 2019
 ; Description: The purpose of this program is to demonstrate the proper use of function properties
@@ -17,6 +17,10 @@
   Hint: Use your personal header display function and
   refer to page 178 for implementing function properties
 */
+
+// Declare a formatted Header
+const header = require('../desrouleaux-header-test.js')
+console.log(header.display("Lance", "Desrouleaux", "Exercise 2.3"));
 
 //creating two property functions for first and last name
 myName.lance = 'Lance';
