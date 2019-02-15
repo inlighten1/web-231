@@ -28,13 +28,20 @@ console.log('');
 function fullName(firstName, lastName){
   return firstName + lastName;
 }
-
+//Create variables for first and last name
+var firstName = "Lance";
+var lastName = " Desrouleaux"
 
 
 //Create a function called dateWriter with three parameters.
 function dateWriter (year, month, day ){
   return month + " " +day +", "+ year;
 }
+//Create variables for day, month  and year
+
+var year = "2019";
+var month = "February";
+var day = "15";
 
 
 //Create a function called formatNumber with two parameters (number and numOfFixedPositions) and return the number with the number of fixed positions you specified in the second parameter.
@@ -43,23 +50,28 @@ function formatNumber(number, numOfFixedPositions){
   return number.toFixed(numOfFixedPositions);
 
 }
+//Create variable for temperature
 
+var temperature = 33.6;
 
 //Create a function called convertToInt with one string parameter.  Parse the string parameter and return the value as an integer.
 function convertToInt (stringNumber){
   return parseInt(stringNumber);
 }
 
-
+//Create a variable for age
+var age = "32"
 
 //Create a function called convertToFloat with one string parameter.  Parse the string parameter and return the value as a float.
 function convertToFloat(stringNumber){
   return parseFloat(stringNumber)
 }
 
+//Create a variable for savings goal
+var savingsGoal = '999999.55';
 
 
 //Log the expected outputs for program.
-console.log('Hello My name is '+ fullName('Lance',' Desrouleaux') +'!' );
-console.log("Today's date is " + dateWriter('2019','February', '15')+" and the temperature is "+ formatNumber(33.6,1) +" degrees.");
-console.log('I am ' + convertToInt('32')+ ' years old and my savings account goal is $'+ convertToFloat('99999999.55'));
+console.log('Hello My name is '+ fullName(firstName,lastName) +'!' );
+console.log("Today's date is " + dateWriter(year, month, day)+" and the temperature is "+ formatNumber(temperature,1) +" degrees.");
+console.log('I am ' + convertToInt(age)+ ' years old and my savings account goal is $'+ convertToFloat(savingsGoal));
