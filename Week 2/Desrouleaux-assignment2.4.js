@@ -28,10 +28,9 @@ console.log('');
 function fullName(firstName, lastName){
   return firstName + lastName;
 }
-//Create variables for first and last name
-var firstName = "Lance";
-var lastName = " Desrouleaux"
+//Create variable for first and last name which uses function to combine them.
 
+var name = fullName('Lance', ' Desrouleaux')
 
 //Create a function called dateWriter with three parameters.
 function dateWriter (year, month, day ){
@@ -60,7 +59,7 @@ function convertToInt (stringNumber){
 }
 
 //Create a variable for age
-var age = "32"
+var age = convertToInt("32");
 
 //Create a function called convertToFloat with one string parameter.  Parse the string parameter and return the value as a float.
 function convertToFloat(stringNumber){
@@ -72,6 +71,8 @@ var savingsGoal = '999999.55';
 
 
 //Log the expected outputs for program.
-console.log('Hello My name is '+ fullName(firstName,lastName) +'!' );
+console.log('Hello My name is '+ name +'!' );
+console.log('');
 console.log("Today's date is " + dateWriter(year, month, day)+" and the temperature is "+ formatNumber(temperature,1) +" degrees.");
-console.log('I am ' + convertToInt(age)+ ' years old and my savings account goal is $'+ convertToFloat(savingsGoal));
+console.log('');
+console.log('I am ' + age + ' years old and my savings account goal is $'+ convertToFloat(savingsGoal));
