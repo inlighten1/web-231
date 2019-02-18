@@ -58,7 +58,7 @@ function convertToInt (stringNumber){
   return parseInt(stringNumber);
 }
 
-//Create a variable for age
+//Create a variable for age which converts the string to int
 var age = convertToInt("32");
 
 //Create a function called convertToFloat with one string parameter.  Parse the string parameter and return the value as a float.
