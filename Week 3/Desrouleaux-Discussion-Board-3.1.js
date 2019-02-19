@@ -21,7 +21,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-//Declare a variable wkeyWord and giving it a value determined by the random integer generator
+//Declare a variable keyWord and giving it a value determined by the random integer generator
 keyWord = getRandomInt(1,6);
 
 console.log("You rolled the dice and your random numnber is..... " + keyWord);
