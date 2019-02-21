@@ -54,12 +54,12 @@ function logMismatch(stringOne, stringTwo){
 
 
 //Created six local variables with default values
-let testVarOne = 'home';
-let testVarTwo = 'kite';
-let testVarThree = 'home';
-let testVarFour = 'boyscout';
-let testVarFive = 'taco';
-let testVarSix = 'taco';
+let testVarOne = 'Truck';
+let testVarTwo = 'Car';
+let testVarThree = 'Four';
+let testVarFour = 'Three';
+let testVarFive = 'Bike';
+let testVarSix = 'Bike';
 
 
 //Here I tested the match function with two different combinations.
