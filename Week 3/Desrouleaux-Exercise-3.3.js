@@ -10,7 +10,7 @@
 // Declare a formatted Header
 const header = require('../desrouleaux-header-test.js')
 console.log(header.display("Lance", "Desrouleaux", "Exercise 3.3"));
-console.log('February 18th, 2019');
+
 console.log('');
 
 
@@ -38,7 +38,7 @@ if (eventKeyCode === 13) {
   console.log('Unrecognized key.')
 }
 */
-
+//This is the start of the program
 
 //here I declared a variable and set it equal to 13
 let eventKeyCode = 13;
@@ -69,3 +69,4 @@ switch(eventKeyCode){
 
 
 }
+//This is the end of the program

@@ -10,7 +10,7 @@
 // Declare a formatted Header
 const header = require('../desrouleaux-header-test.js')
 console.log(header.display("Lance", "Desrouleaux", "Exercise 3.2"));
-console.log('February 18th, 2019');
+
 console.log('');
 
 
@@ -28,6 +28,8 @@ console.log('');
   Four and Three do not match!
 */
 
+
+//This is the start of the program
 
 
 //Create a function called match with two parameters, compare the parameters using the equality operation (===).  If they match return true if they do not match return false.
@@ -88,3 +90,5 @@ if(match(testVarThree, testVarFour)){
 }else{
   logMismatch(testVarThree, testVarFour);
 }
+
+//this is the end of the program
