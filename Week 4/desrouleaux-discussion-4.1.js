@@ -17,7 +17,7 @@ console.log('');
 
 
 //Here I am declaring a new array that has three String values
-myArray = ['Netflix','Hulu','Prime']
+myArray['Netflix','Hulu','Prime'];
 
 //Here I am sorting the array in alphabetical order
 myArray = myArray.sort();
