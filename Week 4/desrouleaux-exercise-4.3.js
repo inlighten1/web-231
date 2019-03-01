@@ -35,12 +35,14 @@ console.log('');
 //Here I will declare an array of 5 string values (cars).
 var carArray = [ 'bmw','honda','acura', 'lexus','toyota'];
 
-console.log("--Displaying Array Items--");
+
+//Here I display each of the vehicles to the screen.
+console.log("-- Displaying Array Items --");
 for ( i in carArray){
   console.log(carArray[i]);
 }
 
-
+//Here I create a function that will iterate over the array and log to the screen any match between the string value that is provided and the array that is provided as arguments.
 function getValue(anyArray, value){
 
   for(i in anyArray){
@@ -53,18 +55,21 @@ function getValue(anyArray, value){
   }
 
 }
+
+//Here I create a variable to carry the first string I will use for testing
 var carChoiceOne = 'toyota';
 console.log('')
-console.log('--Selected Value--');
+
+//Here I log the results of testing the first string  with the array I created and the function.
+console.log('-- Selected Value --');
 getValue(carArray,carChoiceOne);
 console.log('');
 
-
+//Here I create a second variable to carry the second string that I will use for testing
 var carChoiceTwo = 'acura';
 
-console.log('--Selected Value--');
+//Here I log the results of testing the first string with the array I created and the function. 
+console.log('-- Selected Value --');
 getValue(carArray,carChoiceTwo);
 
-
-
-
+//end program
