@@ -37,6 +37,7 @@ for( i in unitedStates){
   console.log(unitedStates[i])
 }
 
+console.log('')
 
 //Here I sort the array in alphabetical order.
 unitedStates= unitedStates.sort();
@@ -47,7 +48,7 @@ for( i in unitedStates){
   console.log(unitedStates[i])
 }
 
-//here I declare a variable that will be use as my selected variable when calling the function.
+//Here I declare a variable that will be use as my selected variable when calling the function.
 var selectedValue = 'Texas'
 
 
@@ -67,3 +68,5 @@ for(i in newArray){
 
 
 //end program
+
+
