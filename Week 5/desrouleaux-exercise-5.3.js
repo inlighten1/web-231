@@ -14,6 +14,8 @@ console.log('');
 
 //start program
 
+
+//Here I declare a Catalog.
 var composers = [
   {
     firstName:'Moby',
@@ -52,5 +54,5 @@ var composers = [
   },
 ]
 
-
-composers.forEach(function(value){console.log(composers.firstName + " " +composers.lastName + " " + composers.genre +" "+ composers.rating)});
+//Here I log each of the Catalog elements to the screen.
+composers.forEach(function(composers){console.log("First Name: " + composers.firstName + ", Last name: " +composers.lastName + ", Genre: " + composers.genre +", Rating: "+ composers.rating)});
