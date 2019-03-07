@@ -2,14 +2,14 @@
 ============================================
 ; Title: desrouleaux-exercise-5.4.js
 ; Author: Lance Desrouleaux
-; Date: 6th March 2019
+; Date: 7th March 2019
 ; Description: Demonstrate the map() method.
 ;===========================================
 */
 
 // Declare a formatted Header
 const header = require('../desrouleaux-header-test.js')
-console.log(header.display("Lance", "Desrouleaux", "Exercise 5.5"));
+console.log(header.display("Lance", "Desrouleaux", "Exercise 5.4"));
 console.log('');
 
 //start program
