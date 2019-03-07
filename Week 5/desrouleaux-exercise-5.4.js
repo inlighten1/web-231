@@ -54,7 +54,7 @@ var composers = [
   },
 ]
 
-
+//Here I declare a new array using the maps() function to filter out the ratings and the composer last name.
 var ratings = composers.map(function(composer){
 
   let rating = [composer.rating, composer.lastName];
@@ -62,29 +62,42 @@ var ratings = composers.map(function(composer){
 
 });
 
+
+//Here I sort the array in descending order.
 ratings.sort(function(a,b){return b-a});
 
 
+//Here I log the composer list in order of rating
 console.log('--COMPOSER BY RATING--')
 ratings.forEach(function(rating){
   console.log('Rating: ' + rating[0]);
   console.log('Composer: '+ rating[1]);
+  console.log('');
 
 });
 
 console.log('');
+
+//Here I delcare a new array using the map() function that filters by genre and last name .
 var genre = composers.map(function(composer){
 
   let genres = [composer.genre, composer.lastName];
   return genres
 });
 
+
+//Here I sort the array by genre name.
 genre.sort();
 
+
+//Here I log the composer list in order of genre.
 console.log('--COMPOSER BY GENRE--')
 genre.forEach(function(genre){
   console.log('Genre: '+ genre[0]);
-  console.log('composer: ' +genre[1]);
+  console.log('Composer: ' +genre[1]);
+  console.log('');
 });
 
+
+//end program
 
