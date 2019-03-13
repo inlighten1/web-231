@@ -3,7 +3,7 @@
 ; Title: desrouleaux-exercise-6.3.js
 ; Author: Lance Desrouleaux
 ; Date: 11th March 2019
-; Description: to create them and to set, query, delete, test, and enumerate their properties
+; Description: to create object  and enumerate their properties
 ;===========================================
 */
 
