@@ -3,7 +3,7 @@
 ; Title: desrouleaux-assignment-6.4.js
 ; Author: Lance Desrouleaux
 ; Date: 11th March 2019
-; Description: Demonstrate nested Objectt
+; Description: Demonstrate nested Object
 ;===========================================
 */
 
@@ -34,3 +34,6 @@ var ticket  = {
 }
 //Here I print the ticketer information to the console.
 console.log(`Ticket ${ ticket.id} was created on ${ticket.dateCreated} to employee ${ticket.person.firstName} ${ticket.person.lastName} (${ticket.person.jobTitle}).`);
+
+
+//End Program
