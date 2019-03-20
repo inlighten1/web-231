@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+		content="Simple HTML with embedded JavaScript " />
+	<meta name="keywords"
+		content=  />
+	<meta name="author"
+		content="Lance Desrouleaux" />
+    <title>Discussion 7.3</title>
+
+     <link href="/Users/inlighten/bu-webdev/web-231/site.css" type="text/css"
+ rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Abel|Poppins|Reenie+Beanie" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Nothing+You+Could+Do" rel="stylesheet">
+
+
+
+   <body>
+    <!-- This is where I create the first list using document.write() -->
+    <script>
+      document.write("<h1>SHOPPING LIST V.1</h1>");
+      document.write("<ol><li>banana  </li> <li>Strawberries</li> <li>blueberries</li> <li>apple</li> <li>jack-fruit</li> </ol>");
+      </script>
+
+      <h1 id = "fruitTable"></h1>
+      <div id='fruitList'></div>
+      <!-- this is where I create the second list using the innerHTML function and tables-->
+      <script>
+        document.getElementById("fruitTable").innerHTML = "SHOPPING LIST V.2" ;
+
+        document.getElementById("fruitList").innerHTML = "<table>" +
+          "<thead>" +
+            "<tr>" +
+              "<th>Id" +
+                "<th>Item"+
+                  "</tr>"+
+                  "</thead>"+
+                  "<tbody>"+
+                    "<td>1 "+
+                      "<td> banana"+
+                        "<tr><td> 2"+
+                          "<td> strawberries" +
+                              "<tr><td> 3"+
+                                  "<td> blueberries" +
+                                      "<tr><td> 4"+
+                                          "<td> apple" +
+                                              "<tr><td> 5"+
+                                                  "<td> jack-fruit"
+
+
+
+
+
+
+
+
+
+
+
+
+      </script>
+
+   </body>
+</html>
