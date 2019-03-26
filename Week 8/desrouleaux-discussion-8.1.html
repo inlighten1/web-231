@@ -1,0 +1,95 @@
+
+<!--
+============================================
+; Title: desrouleaux-discussion-8.1.html
+; Author: Lance Desrouleaux
+; Date: 25th March 2019
+; Description: A simple Html page with jquery
+;===========================================
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+		content="Simple HTML with embedded JavaScript " />
+	<meta name="keywords"
+		content=  "" />
+	<meta name="author"
+		content="Lance Desrouleaux" />
+    <title>Discussion 8.1</title>
+
+     <link href="styles.css" type="text/css"
+ rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Abel|Poppins|Reenie+Beanie" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Nothing+You+Could+Do" rel="stylesheet">
+
+
+
+<style>
+
+body{
+  background-color: darksalmon;
+  font-family: 'Abel';
+  color:white;
+
+
+
+}
+img {
+  max-width: 25%;
+  height: auto;
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<script>
+//Here I begin entering jqueries
+  $.fx.speeds.slow = 1500;
+  $(document).ready(function(){
+
+    $("h1").css("color","OldLace");
+    $("h1")css("font-size","3.7em");
+    $("p").css("font-size","1.7em");
+    $("button").css("font-size",18px");
+
+
+
+    $("button").click(function(){
+
+      $("h1").hide()
+      $(".imagine").fadeOut("slow";
+    });
+  });
+  </script>
+  </head>
+  <body>
+  <h1 class= "see"> now you see me...</h1>
+  <h2>Ponder the following:</h2>
+
+  <p>
+
+  <p class= "imagine">...imagine for a moment that these are all your problems, worries, fears, concerns , and regrets....</p>
+    <img class= "imagine" src="https://www.greenbiz.com/sites/default/files/styles/gbz_article_primary_breakpoints_kalapicture_screen-lg_2x/public/images/articles/featured/seedsnopparatpromthasstock.png?itok=KAXH_QUY&timestamp=1542669478">
+  <button>Click me and make it all go away</button>
+
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
