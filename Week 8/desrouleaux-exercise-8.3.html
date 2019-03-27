@@ -1,0 +1,168 @@
+
+<!--
+============================================
+; Title: desrouleaux-discussion-8.3.html
+; Author: Lance Desrouleaux
+; Date: 20th March 2019
+; Description: A simple Html page with javascript
+;===========================================
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+		content="Simple HTML with embedded JavaScript " />
+	<meta name="keywords"
+		content=  />
+	<meta name="author"
+    content="Lance Desrouleaux" />
+    <title>Exercise 8.2 </title>
+
+
+     <link href="styles.css" type="text/css"
+ rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Abel|Poppins|Reenie+Beanie" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Nothing+You+Could+Do" rel="stylesheet">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+<style>
+
+
+tr:nth-child(even) {background:grey}
+tr:nth-child(odd) {background:orange}
+
+p{
+          padding-top: 20px;
+          padding-left: 20px;
+          font-weight:300;
+}
+
+h1{
+          padding-top: 20px;
+          padding-left: 20px;
+          font-weight:400;
+
+
+}
+body{
+
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          margin: 0 auto;
+
+}
+
+.topbar{
+  background-color: aquamarine;
+  height:30px;
+}
+
+table{
+          padding-top: 20px;
+          padding-left: 20px;
+}
+
+button{
+  margin-left: 20px;
+}
+
+
+</style>
+
+<div class= "topbar"></div>
+   </head>
+
+
+
+   <body>
+
+
+
+    </div>
+     <h1>Paragraph</h1>
+
+     <p class="para" title = " This is a paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus purus at tempus hendrerit. Donec neque ex, viverra et efficitur sit amet, ullamcorper maximus magna. Curabitur volutpat porta neque et pulvinar. Ut in mattis nibh. Aenean velit dolor, viverra sed turpis eget, convallis pretium turpis. Aliquam erat volutpat. Ut malesuada lectus in ultrices interdum. Proin at ante vitae nunc pretium tristique in nec lorem. Mauris eu convallis diam, sit amet bibendum augue. Pellentesque vulputate sem tincidunt sem imperdiet eleifend. Vestibulum pulvinar, dolor sit amet eleifend tincidunt, nisl ligula placerat nunc, eget facilisis diam odio tempor dolor.
+
+        In vehicula neque eu dignissim vestibulum. Sed rhoncus nisl et odio feugiat, eget efficitur augue mattis. Cras consectetur quis nibh vel elementum. Proin non enim tempus, dignissim dui eu, gravida ipsum. Duis quis convallis nunc, quis condimentum ex. Aenean lacus nibh, aliquet ac auctor et, bibendum nec nisl. Vestibulum id scelerisque orci, non elementum leo.
+
+        Cras cursus molestie quam eget volutpat. Sed convallis sapien sed metus facilisis, id faucibus metus ultrices. Nam sollicitudin ornare purus sollicitudin aliquam. Nam non porttitor nisi. Duis eget volutpat dui, at euismod ante. Aliquam ultricies mi sit amet quam consequat, ultrices condimentum ligula viverra. Proin dictum facilisis tincidunt. Vestibulum suscipit fringilla neque vitae luctus. Vestibulum tincidunt sodales urna ac blandit. Maecenas vestibulum quis nulla non convallis. Proin dapibus facilisis elit. Phasellus accumsan odio in dolor elementum efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in elit odio. Mauris lacinia maximus molestie.
+
+        Mauris eget nulla rhoncus, tempus sapien ut, fringilla tortor. Aliquam congue aliquam feugiat. Pellentesque nulla augue, efficitur et hendrerit ut, egestas et sem. Praesent porta turpis et magna suscipit faucibus. Fusce sed quam et dui pretium iaculis eu dapibus velit. Duis tristique fringilla nulla, et viverra odio dignissim vestibulum. Fusce auctor nunc a mi ornare porttitor. Sed orci odio, laoreet non tristique quis, eleifend sed leo. Suspendisse at mauris sit amet orci fringilla pharetra sit amet a nulla.
+
+        Sed dapibus nisl ac nisi tincidunt, nec malesuada magna consequat. Duis a est risus. Etiam dignissim dolor ut enim elementum pulvinar. Morbi aliquam ultricies magna et elementum. Maecenas ante est, consequat eu condimentum eu, aliquam vel odio. Morbi ligula risus, venenatis in lectus a, euismod hendrerit nibh. Phasellus mollis nec felis vestibulum posuere.
+
+
+     </p>
+     <button>Toggle</button>
+
+
+      <table>
+      <th>ID</th>
+      <th>Type</th>
+
+      <tr>
+        <td><a href="" class="fruitTableID">1</a></td>
+        <td>Mango</td>
+
+      </tr>
+      <tr>
+          <td><a href="" class="fruitTableID">2</a></td>
+          <td>Watermelon</td>
+
+        </tr>
+        <tr>
+            <td><a href="" class="fruitTableID">3</a></td>
+            <td>Pineapple</td>
+
+          </tr>
+          <tr>
+              <td><a href="" class="fruitTableID">4</a></td>
+              <td>Apple</td>
+
+            </tr>
+            <tr>
+                <td><a href="" class="fruitTableID">5</a></td>
+                <td>Kiwi</td>
+
+              </tr>
+
+
+
+    </table>
+    <script>
+        $(document).ready(function(){
+         $("h1").css("color","blue");
+         $("body").css("font-family","Roboto");
+         $("h1").css("color","blue");
+
+         $("button").click(function(){
+
+            $("p").hide();
+          });
+        });
+
+
+        $(".fruitTableID").click(function (event) {
+      event.preventDefault();
+      var fruitId = $(this).text();
+      var fruitType = $(this).closest("td").next().text();
+      alert("ID: " + fruitId + ", Fruit Type: " + fruitType);
+      });
+
+
+
+       </script>
+
+
+   </body>
+
+</html>
+
+
