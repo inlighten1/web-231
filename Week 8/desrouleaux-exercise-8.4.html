@@ -1,0 +1,98 @@
+
+<!--
+============================================
+; Title: desrouleaux-discussion-8.4.html
+; Author: Lance Desrouleaux
+; Date: 28th March 2019
+; Description: A simple Html page with javascript
+;===========================================
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+		content="Simple HTML with embedded JavaScript " />
+	<meta name="keywords"
+		content=  />
+	<meta name="author"
+    content="Lance Desrouleaux" />
+    <title>Exercise 8.4 </title>
+
+
+     <link href="styles.css" type="text/css"
+ rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Abel|Poppins|Reenie+Beanie" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Nothing+You+Could+Do" rel="stylesheet">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+
+<style type="text/css">
+  #employee tbody tr:hover {
+    cursor: pointer;
+    background-color: #ffff99;
+  }
+</style>
+</head>
+<body>
+
+<div id="emps"></div>
+
+<script type="text/javascript">
+
+
+
+
+
+
+
+
+
+
+   function employee(id, firstName, lastName, title) {
+      this.id = id;
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.title = title;
+}
+
+
+ var employees = [
+  new employee(001, 'Larry', 'David', 'Writer'),
+  new employee(002, 'Lisa', 'Holiday', 'Human Resources'),
+  new employee(003, 'Barry', 'TWhite', 'CEO'),
+  new employee(004, 'Samantha', 'Littlee', 'Sales'),
+  new employee(005, 'Jerome', 'Baker', 'Software Engineer'),
+];
+
+var output = "<h1>Employee Listing</h1><table><thead>"+"<tr>"+"<th>"+"Id"+"</th>"+"<th>"+"First Name"+"</th>"+"<th>"+"Last Name"+"</th>"+"<th>"+"Title"+"</th>"+"</tr>"+"</thead>"
+
+
+for (var x = 0; x < employees.length; x++) {
+    output +="<tr>"+"<td>"+ employees[x].id + "</td>"+"<td>" + employees[x].firstName + "</td>"+"<td>" + employees[x].lastName +"</td>"+"<td>" + employees[x].title + "</td>"+"</tr>";
+}
+
+output += "</table>";
+document.getElementById('emps').innerHTML = output;
+
+function getEmployee(id) {
+	for(var i = 0; i < employees.length; i++){
+		if(employees[i].id == id){
+			alert("id: "+ employees[i].id +" Name: "+ employees[i].firstName +" "+ employees[i].lastName + " Title: " + employees[i].title);
+			break;
+		}
+	}
+}
+
+$("table tr").on("click", function(){
+	var id = $(this).find("td:first").html();
+	getEmployee(id);
+});
+
+
+   </script>
