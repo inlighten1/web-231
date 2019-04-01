@@ -44,23 +44,13 @@
 <div id="emps"></div>
 
 <script type="text/javascript">
-
-
-
-
-
-
-
-
 //This is a constructor object to create employees.
-
    function employee(id, firstName, lastName, title) {
       this.id = id;
       this.firstName = firstName;
       this.lastName = lastName;
       this.title = title;
 }
-
 //this is an array of 5 employee objects
  var employees = [
   new employee(001, 'Larry', 'David', 'Writer'),
@@ -69,20 +59,14 @@
   new employee(004, 'Samantha', 'Littlee', 'Sales'),
   new employee(005, 'Jerome', 'Baker', 'Software Engineer'),
 ];
-
-
 //here I build an employee table
 var output = "<h1>Employee Listing</h1><table><thead>"+"<tr>"+"<th>"+"Id"+"</th>"+"<th>"+"First Name"+"</th>"+"<th>"+"Last Name"+"</th>"+"<th>"+"Title"+"</th>"+"</tr>"+"</thead>"
-
 //Here I iterate over the array and to add employee data to the the table
 for (var x = 0; x < employees.length; x++) {
     output +="<tr>"+"<td>"+ employees[x].id + "</td>"+"<td>" + employees[x].firstName + "</td>"+"<td>" + employees[x].lastName +"</td>"+"<td>" + employees[x].title + "</td>"+"</tr>";
 }
-
 output += "</table>";
 document.getElementById('emps').innerHTML = output;
-
-
 //Here i wrote a function to display an alert witht he employee information when a row is clicked.
 function getEmployee(id) {
 	for(var i = 0; i < employees.length; i++){
@@ -97,6 +81,5 @@ $("table tr").on("click", function(){
 	var id = $(this).find("td:first").html();
 	getEmployee(id);
 });
-
-
    </script>
+
